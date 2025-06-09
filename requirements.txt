@@ -1,1 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+pillow
+torch
+torchvision
+torchaudio
+transformers
+librosa
  
