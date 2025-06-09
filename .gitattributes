@@ -1,0 +1,4 @@
+__pycache__/** export-ignore
+*.pt export-ignore
+*.pth export-ignore
+*.ipynb export-ignore
