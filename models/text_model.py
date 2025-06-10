@@ -2,9 +2,9 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 class TextModel:
-    def __init__(self, model_name="bert-base-uncased"):
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
+    def __init__(self, model_path="bert-tiny"):
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     def predict_deception(self, text):
         inputs = self.tokenizer(text, return_tensors='pt', padding=True, truncation=True)
