@@ -2,10 +2,11 @@ fastapi
 uvicorn
 python-multipart
 pillow
-transformers
-librosa
-scikit-learn
+transformers==4.35.2
 torch==2.1.0+cpu
 torchaudio==2.1.0+cpu
 torchvision==0.16.0+cpu
+librosa
+scikit-learn
+numpy==1.26.4
 --extra-index-url https://download.pytorch.org/whl/cpu
